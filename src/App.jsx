@@ -23,15 +23,17 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     live: "https://aminanadeem123.github.io/FurEVER-Care/",
   },
-  {
-    number: "03",
-    title: "PetBOT Website",
-    category: "Pet Care Web Application",
-    description:
-      "A responsive front-end web project focused on creating a simple and accessible pet care experience.",
-    tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    live: "https://aminanadeem123.github.io/PetBot-Website/",
-  },
+
+{
+  number: "03",
+  title: "PetBOT Website",
+  category: "Plastic & Manufacturing Website",
+  description:
+    "A responsive business website designed for the plastic manufacturing industry, showcasing company products, services, and business information through a clean and user-friendly interface.",
+  tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+  live: "https://aminanadeem123.github.io/PetBot-Website/",
+},
+
   {
     number: "04",
     title: "MindCare Hub",
