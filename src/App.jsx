@@ -1,4 +1,5 @@
-
+import Hero from "./components/hero.jsx";
+import About from "./components/about.jsx";
 import "./App.css";
 
 const projects = [
@@ -124,77 +125,9 @@ function App() {
       </nav>
 
       {/* HERO */}
-      <section className="hero" id="home">
-        <div className="hero-content">
-          <span className="eyebrow">
-            FRONT-END DEVELOPER & OFFICE SERVICES
-          </span>
-
-          <h1>
-            Amina Nadeem<span>.</span>
-          </h1>
-
-          <h2>
-            Building responsive websites
-            <br />
-            and creating organized digital work.
-          </h2>
-
-          <p>
-            I create clean, responsive and user-friendly
-            web experiences. I also work on professional
-            documents, spreadsheets, presentations and
-            project documentation.
-          </p>
-
-          <div className="hero-buttons">
-            <a href="#work" className="btn-primary">
-              Explore My Work ↗
-            </a>
-
-            <a href="#contact" className="btn-outline">
-              Contact Me
-            </a>
-          </div>
-        </div>
-
-        <div className="hero-side">
-          <span className="side-line"></span>
-          <p>DESIGN MINDED.</p>
-          <p>DETAIL FOCUSED.</p>
-          <p>ALWAYS LEARNING.</p>
-        </div>
-      </section>
-
-      {/* ABOUT */}
-      <section className="section about-section" id="about">
-        <div className="section-label">01 / ABOUT ME</div>
-
-        <div className="about-content">
-          <h2>
-            A little about
-            <span> what I do.</span>
-          </h2>
-
-          <p>
-            I'm a front-end development student passionate
-            about building websites that are simple,
-            functional and visually clear.
-          </p>
-
-          <p>
-            Alongside web development, I enjoy working
-            with Microsoft Office tools to create organized
-            documents, spreadsheets, presentations and
-            academic project reports.
-          </p>
-
-          <p>
-            I'm continuously learning and improving my
-            technical, creative and documentation skills.
-          </p>
-        </div>
-      </section>
+        <Hero />
+       {/* ABOUT */}
+      <About />
 
       {/* SERVICES */}
       <section className="section services-section" id="services">
