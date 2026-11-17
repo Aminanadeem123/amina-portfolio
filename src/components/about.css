@@ -1,132 +1,124 @@
 
+/* =========================
+   ABOUT — MODERN CORPORATE
+========================= */
+
 .about-section {
   position: relative;
   isolation: isolate;
   width: 100%;
-  padding: 120px 6%;
+  padding: 110px 6%;
   overflow: hidden;
-  background:
-    radial-gradient(
-      ellipse at 5% 20%,
-      rgba(37, 99, 235, 0.13),
-      transparent 35%
-    ),
-    radial-gradient(
-      ellipse at 95% 85%,
-      rgba(14, 165, 233, 0.09),
-      transparent 32%
-    ),
-    #0b1424;
-  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  background: #eee9dc;
+  border-top: 1px solid #ded9ca;
+  border-bottom: 1px solid #ded9ca;
 }
 
 .about-section::before {
   content: "";
   position: absolute;
-  width: 350px;
-  height: 350px;
-  top: 5%;
-  right: -180px;
-  border: 1px solid rgba(96, 165, 250, 0.12);
+  width: 320px;
+  height: 320px;
+  top: 8%;
+  right: -170px;
+  border: 1px solid rgba(104, 118, 83, 0.15);
   border-radius: 50%;
   box-shadow:
-    0 0 0 45px rgba(96, 165, 250, 0.025),
-    0 0 0 90px rgba(96, 165, 250, 0.02);
+    0 0 0 45px rgba(104, 118, 83, 0.035),
+    0 0 0 90px rgba(104, 118, 83, 0.025);
   pointer-events: none;
   z-index: -1;
 }
 
 .about-wrapper {
   position: relative;
-  max-width: 1160px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 0.9fr;
-  gap: 90px;
+  gap: 85px;
   align-items: center;
 }
 
-/* LEFT CONTENT */
+/* =========================
+   LEFT CONTENT
+========================= */
 
 .about-left {
-  max-width: 550px;
+  max-width: 560px;
 }
 
 .about-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 28px;
-  color: #60a5fa;
-  font-size: 11px;
+  gap: 11px;
+  margin-bottom: 27px;
+  color: #687653;
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .about-eyebrow::before {
   content: "";
-  width: 25px;
+  width: 26px;
   height: 2px;
-  background: #60a5fa;
-  border-radius: 5px;
+  background: #687653;
 }
 
 .about-left h2 {
-  max-width: 540px;
+  max-width: 550px;
   margin: 0 0 25px;
-  color: #f8fafc;
-  font-family: "Space Grotesk", sans-serif;
+  color: #29332b;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(40px, 5vw, 62px);
   line-height: 1.12;
-  font-weight: 700;
-  letter-spacing: -2.5px;
+  font-weight: 800;
+  letter-spacing: -2.7px;
 }
 
 .about-left h2 span {
   display: block;
-  background: linear-gradient(
-    100deg,
-    #60a5fa,
-    #38bdf8,
-    #93c5fd
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #687653;
+  background: none;
+  -webkit-text-fill-color: #687653;
 }
 
 .about-intro {
-  max-width: 450px;
-  margin: 0 0 32px;
-  color: #a1aec2;
-  font-size: 16px;
+  max-width: 460px;
+  margin: 0 0 30px;
+  color: #72766b;
+  font-size: 15px;
   line-height: 1.9;
 }
+
+/* ABOUT LINK */
 
 .about-link {
   display: inline-flex;
   align-items: center;
   gap: 12px;
   padding: 13px 19px;
-  color: #bfdbfe;
-  background: rgba(59, 130, 246, 0.09);
-  border: 1px solid rgba(96, 165, 250, 0.28);
-  border-radius: 7px;
+  color: #536141;
+  background: transparent;
+  border: 1px solid #c5c9b5;
+  border-radius: 4px;
   text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.25s ease;
 }
 
 .about-link span {
-  font-size: 17px;
-  transition: transform 0.3s ease;
+  font-size: 16px;
+  transition: transform 0.25s ease;
 }
 
 .about-link:hover {
   color: #ffffff;
-  background: rgba(59, 130, 246, 0.2);
-  border-color: rgba(96, 165, 250, 0.6);
+  background: #687653;
+  border-color: #687653;
   transform: translateY(-3px);
 }
 
@@ -134,38 +126,33 @@
   transform: translate(3px, -3px);
 }
 
-/* RIGHT CONTENT */
+/* =========================
+   RIGHT CONTENT
+========================= */
 
 .about-right {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 13px;
 }
 
 .about-description {
   position: relative;
   display: grid;
-  grid-template-columns: 42px 1fr;
-  gap: 18px;
-  padding: 25px;
-  background: linear-gradient(
-    135deg,
-    rgba(30, 48, 73, 0.72),
-    rgba(17, 31, 51, 0.65)
-  );
-  border: 1px solid rgba(148, 163, 184, 0.13);
-  border-radius: 12px;
-  transition: all 0.3s ease;
+  grid-template-columns: 40px 1fr;
+  gap: 17px;
+  padding: 24px;
+  background: #f9f7f0;
+  border: 1px solid #ded9ca;
+  border-radius: 5px;
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .about-description:hover {
-  transform: translateX(5px);
-  border-color: rgba(96, 165, 250, 0.4);
-  background: linear-gradient(
-    135deg,
-    rgba(37, 59, 89, 0.8),
-    rgba(17, 31, 51, 0.8)
-  );
+  transform: translateX(4px);
+  border-color: #aab296;
+  box-shadow: 0 9px 25px rgba(41, 51, 43, 0.06);
 }
 
 .about-number {
@@ -174,31 +161,33 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  color: #93c5fd;
-  background: rgba(59, 130, 246, 0.12);
-  border: 1px solid rgba(96, 165, 250, 0.18);
-  border-radius: 8px;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
+  color: #596746;
+  background: #e9eadf;
+  border: 1px solid #dce0cf;
+  border-radius: 4px;
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
 }
 
 .about-description h3 {
   margin: 3px 0 9px;
-  color: #f1f5f9;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
+  color: #29332b;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .about-description p {
   margin: 0;
-  color: #9aaac0;
+  color: #72766b;
   font-size: 13px;
   line-height: 1.85;
 }
 
-/* RESPONSIVE */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 900px) {
   .about-section {
@@ -207,21 +196,25 @@
 
   .about-wrapper {
     grid-template-columns: 1fr;
-    gap: 55px;
+    gap: 48px;
   }
 
   .about-left {
-    max-width: 650px;
+    max-width: 680px;
   }
 
   .about-left h2 {
-    max-width: 600px;
+    max-width: 620px;
   }
 
   .about-right {
-    max-width: 700px;
+    max-width: 750px;
   }
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 550px) {
   .about-section {
@@ -229,12 +222,12 @@
   }
 
   .about-wrapper {
-    gap: 40px;
+    gap: 38px;
   }
 
   .about-left h2 {
     font-size: 39px;
-    letter-spacing: -1.7px;
+    letter-spacing: -1.8px;
   }
 
   .about-intro {
@@ -248,7 +241,7 @@
   }
 
   .about-description h3 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .about-description p {
